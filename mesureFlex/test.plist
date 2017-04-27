@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileNames</key>
+	<dict>
+		<key>LADOUX_JFK.txt</key>
+		<array/>
+		<key>Sync</key>
+		<false/>
+		<key>archive</key>
+		<string>archive_jfn.txt</string>
+	</dict>
+	<key>RestrictionsPasswordKey</key>
+	<data>HSTKsEU+2tFVQhL/5l3/erqffTk=</data>
+	<key>RestrictionsPasswordSalt</key>
+	<data>+M3bpA==</data>
+</dict>
+</plist>

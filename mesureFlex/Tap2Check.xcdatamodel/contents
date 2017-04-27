@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16B2657" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="DataState" syncable="YES">
+        <attribute name="capacity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="device_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sector_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Faq" syncable="YES">
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poste" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="prenom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="q1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="q2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="q3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="q4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remarque" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Images" isAbstract="YES" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sector_id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Inventaires" isAbstract="YES" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Pastilles" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="inventaire_id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Sectors" isAbstract="YES" syncable="YES">
+        <attribute name="column" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="inventaire_id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="line" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wp" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sectors" inverseName="relationship" inverseEntity="Sectors" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DataState" positionX="-189" positionY="162" width="128" height="150"/>
+        <element name="Faq" positionX="-189" positionY="144" width="128" height="165"/>
+        <element name="Images" positionX="-47" positionY="150" width="128" height="120"/>
+        <element name="Inventaires" positionX="-182" positionY="72" width="128" height="75"/>
+        <element name="Pastilles" positionX="-189" positionY="144" width="128" height="120"/>
+        <element name="Sectors" positionX="-333" positionY="66" width="135" height="163"/>
+    </elements>
+</model>

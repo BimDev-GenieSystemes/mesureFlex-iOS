@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DataState" syncable="YES">
+        <attribute name="capacity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="device_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inventaire_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latlng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saved" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sector" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sector_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpbookable" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpbuild" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpcapcity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpclass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpcluster" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpcomment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpcountable" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpcritical" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpdatetime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpdir" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpfloor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wphandle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpoptdata1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpoptdata2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpoptdata3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpplace" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wppt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpradius" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpshape" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpsite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpstate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wptype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wpzone" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Images" representedClassName="Images" syncable="YES" codeGenerationType="class">
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inventaire_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sector_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Inventaires" representedClassName="Inventaires" syncable="YES" codeGenerationType="class">
+        <attribute name="campallowedusersids" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campcredatetime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campcustomer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campdatetimeend" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campdatetimestart" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campfullname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campissuer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campmoddatetime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campposnbr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campsectornames" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campsite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campstatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="camptotalcount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campusagemultipleposids" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campusagesingleposids" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PastilleStates" representedClassName="PastilleStates" syncable="YES" codeGenerationType="class">
+        <attribute name="usageabsolutevalue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usagealwaysexists" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usagecontext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usagedisplayicon" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="usagedisplaytext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usagehexcolor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usageid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usagestatus" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Sectors" representedClassName="Sectors" syncable="YES" codeGenerationType="class">
+        <attribute name="column" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="inventaire_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="line" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumb" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="wp" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DataState" positionX="-54" positionY="63" width="128" height="570"/>
+        <element name="Images" positionX="-54" positionY="36" width="128" height="135"/>
+        <element name="Inventaires" positionX="-63" positionY="-18" width="128" height="285"/>
+        <element name="PastilleStates" positionX="-45" positionY="45" width="128" height="165"/>
+        <element name="Sectors" positionX="-54" positionY="-9" width="128" height="180"/>
+    </elements>
+</model>
