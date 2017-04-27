@@ -43,17 +43,16 @@
     NSArray *dirContents = [fm contentsOfDirectoryAtPath:docsDirectory error:nil];
     NSPredicate *fltr = [NSPredicate predicateWithFormat:@"self ENDSWITH '.DS'"];
     onlyTXTs = [dirContents filteredArrayUsingPredicate:fltr];
-    
+    NSDate *date  = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *newDate = [dateFormatter stringFromDate:date];
     for (NSString *s in onlyTXTs) {
         [MFLogger put:s];
-        NSDate *date  = [NSDate date];
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-        NSString *newDate = [dateFormatter stringFromDate:date];
-        NSString * timestamp = [NSString stringWithFormat:@"#%@.DS",newDate];
+        
+        NSString *timestamp = [NSString stringWithFormat:@"#%@.DS",newDate];
         [times addObject:timestamp];
         NSString *path = [NSString stringWithFormat:@"%@/%@",docsDirectory,s];
-        
         NSString *newFName = [s stringByReplacingOccurrencesOfString:@".DS" withString:timestamp];
         [self.requestsManager addRequestForUploadFileAtLocalPath:path toRemotePath:[NSString stringWithFormat:@"EXCHANGE/%@",newFName]];
     }
